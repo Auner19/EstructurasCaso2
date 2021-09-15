@@ -19,4 +19,14 @@ int main() {
 
     cout << miLista.getSize() << endl;
 
+
+    jugadores myList;
+    myList.insertarFinal(1, "Pablo");
+    myList.insertarFinal(2, "Andres");
+    myList.insertarFinal(3, "Sofia");
+    myList.insertarFinal(4, "Maria");
+
+    //cout << list.isEmpty() << endl;
+    cout << myList.getQuantity() << endl;
+
 }

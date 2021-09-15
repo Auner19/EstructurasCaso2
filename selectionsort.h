@@ -1,4 +1,4 @@
-//#ifndef _SELECTIONSORT_
+#ifndef _SELECTIONSORT_
 #define _SELECTIONSORT_
 
 #include <iostream>
@@ -12,11 +12,11 @@ struct floats {
     nodoFloats* inicio = nullptr;
     nodoFloats* final = nullptr;
 
-int getSize() {
+    int getSize() {
         return size;
     }
 
-void agregar(int pValue) {
+    void agregar(float pValue) {
         nodoFloats* newvalue = (nodoFloats*)malloc(sizeof(struct floats));
         newvalue->valor = pValue;
         
@@ -31,28 +31,31 @@ void agregar(int pValue) {
         size++;
     }
 
- // función para intercambiar la posición de dos elementos
-void intercambio(float *position1, float *position2) {
-    float temp = *position1;
-    *position1 = *position2;
-    *position2 = temp;
+    // función para intercambiar la posición de dos elementos
+    void intercambio(float *position1, float *position2) {
+        float temp = *position1;
+        *position1 = *position2;
+        *position2 = temp;
     }
 
  // función para imprimir un array
-void imprimirLista(float lista[], int size) {
-    for (int indice = 0; indice < size; indice++) {
-        cout << lista[indice] << " ";
-        }
+    void imprimirLista(float* puntero, int size) {
+        for (int indice = 0; indice < size; indice++) {
+            cout << *(puntero + indice) << endl;
+        } 
         cout << endl;
     }
 
 
-/*void selectionSort( float *pValoresAOrdenar){
-    if (size > 2) {
-        inicio = *pValoresAOrdenar;
-
+    void selectionSort(float* pValoresAOrdenar, int pCantidadElementos){
+        for (int indice = 0; indice < pCantidadElementos; indice++) {
+            cout << *(pValoresAOrdenar + indice) << endl;
+        } 
+        cout << endl;
     }
-*/
+
 
 };
+
+#endif
 

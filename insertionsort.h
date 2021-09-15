@@ -1,4 +1,4 @@
-//#ifndef _INSERTIONSORT_
+#ifndef _INSERTIONSORT_
 #define _INSERTIONSORT_
 
 #include <iostream>
@@ -6,3 +6,16 @@
 #include "listasimple.h"
 
 using namespace std;
+
+
+
+
+
+
+
+
+
+
+
+
+#endif

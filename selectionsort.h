@@ -47,14 +47,35 @@ struct floats {
     }
 
 
-    void selectionSort(float* pValoresAOrdenar, int pCantidadElementos){
-        for (int indice = 0; indice < pCantidadElementos; indice++) {
-            cout << *(pValoresAOrdenar + indice) << endl;
-        } 
-        cout << endl;
+    void selectionSort(float* pValoresAOrdenar, int size){
+        float* puntero2 = pValoresAOrdenar + 1;
+        int indice = 0;
+        while( indice < size-1 ){ 
+            if(*pValoresAOrdenar > *puntero2){
+                intercambio( pValoresAOrdenar, puntero2);
+                *(pValoresAOrdenar)++;
+                //*(puntero2)= *(puntero2)+indice;
+                indice ++;
+            }
+            else
+             *(pValoresAOrdenar)++;
+             *(puntero2)++;
+             //indice ++;
+        }
     }
 
 
+ /*   void selectionSort(float* pValoresAOrdenar, int size) {
+        for (int indice = 0; indice < size - 1; indice++) {
+            float* puntero = pValoresAOrdenar;
+            for (*puntero = indice + 1; *puntero < size; *puntero++) {
+                if (*puntero > *pValoresAOrdenar)
+                *pValoresAOrdenar = *puntero;
+            }
+         intercambio(pValoresAOrdenar, puntero);
+        }     
+    }
+    */
 };
 
 #endif

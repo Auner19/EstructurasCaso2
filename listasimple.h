@@ -42,7 +42,7 @@ using namespace std;
 
     void imprimirLista(jugadores* puntero, int size) {
         for (int indice = 0; indice < size; indice++) {
-            cout << *(puntero + indice) << endl;
+         //   cout << *(puntero + indice) << endl;
         } 
         cout << endl;
     }

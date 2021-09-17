@@ -29,7 +29,4 @@ int main() {
 
     list.imprimirLista(&myList[0], 4);
 
-    //cout << list.isEmpty() << endl;
-   // cout << myList.getQuantity() << endl;
-
 }

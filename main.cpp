@@ -16,21 +16,20 @@ int main() {
     miLista.selectionSort(&miArreglo[0], 5);
     miLista.imprimirLista(&miArreglo[0], 5);
 
-   // cout << miLista.getSize() << endl;
 
-  //  miLista.imprimirLista(&miArreglo[0]);
+    jugadores myList[] = {};
+    jugadores list;
     
-   /* jugadores list;
+    list.insertarFinal(1, "Pablo");
+    list.insertarFinal(2, "Andres");
+    list.insertarFinal(3, "Sofia");
+    list.insertarFinal(4, "Maria");
 
-    jugadores myList;
-    myList.insertarFinal(1, "Pablo");
-    myList.insertarFinal(2, "Andres");
-    myList.insertarFinal(3, "Sofia");
-    myList.insertarFinal(4, "Maria");
-    //myList.imprimirLista(&list[0], 4);
+    list.insertarPosition(7, "Luis", 2);
 
+    list.imprimirLista(&myList[0], 4);
 
     //cout << list.isEmpty() << endl;
    // cout << myList.getQuantity() << endl;
-*/
+
 }

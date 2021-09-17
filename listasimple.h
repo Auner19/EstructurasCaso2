@@ -40,7 +40,7 @@ using namespace std;
         return true;
     }
 
-    void imprimirLista(float* puntero, int size) {
+    void imprimirLista(jugadores* puntero, int size) {
         for (int indice = 0; indice < size; indice++) {
             cout << *(puntero + indice) << endl;
         } 
@@ -104,7 +104,7 @@ using namespace std;
     } 
 
     void InsertionSort(jugadores *punteroJugadores){
-        
+
     }
 
 };
